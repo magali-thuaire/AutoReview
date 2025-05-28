@@ -13,6 +13,7 @@ final class AppController extends AbstractController
     {
         $jour = (int) date('j');
         $message = $jour % 2 === 0 ? 'Coucou, en forme ?' : 'ça gaz';
+        $test = 12;
 
         return $this->render('app/index.html.twig', [
             'controller_name' => 'AppController',
